@@ -108,14 +108,14 @@ const Services = () => {
                           {s.ideal} · {s.duration}
                         </p>
                       </div>
-                      <span className="text-lg font-serif font-semibold text-primary">
+                      <span className="text-lg font-serif font-semibold text-accent">
                         {s.price}
                       </span>
                     </div>
                     <ul className="space-y-2.5 mb-6 flex-1">
                       {s.inclusions.map((inc, j) => (
                         <li key={j} className="flex items-start gap-2.5">
-                          <Check className="w-4 h-4 text-primary mt-0.5 shrink-0" />
+                          <Check className="w-4 h-4 text-accent mt-0.5 shrink-0" />
                           <span className="text-sm text-muted-foreground">
                             {inc}
                           </span>
@@ -139,14 +139,14 @@ const Services = () => {
               <h2 className="text-2xl font-serif font-semibold text-foreground text-center mb-10">
                 Add-Ons
               </h2>
-              <div className="bg-card rounded-lg divide-y divide-border">
+              <div className="bg-card border border-border rounded-lg divide-y divide-border">
                 {addOns.map((a, i) => (
                   <div
                     key={i}
                     className="flex items-center justify-between p-5"
                   >
                     <span className="text-sm text-foreground">{a.name}</span>
-                    <span className="text-sm font-medium text-primary">
+                    <span className="text-sm font-medium text-accent">
                       {a.price}
                     </span>
                   </div>
@@ -155,15 +155,15 @@ const Services = () => {
             </ScrollReveal>
 
             <ScrollReveal delay={100}>
-              <div className="mt-8 flex items-start gap-3 p-5 bg-rose-light rounded-lg">
-                <Info className="w-4 h-4 text-primary mt-0.5 shrink-0" />
+              <div className="mt-8 flex items-start gap-3 p-5 bg-card border border-border rounded-lg">
+                <Info className="w-4 h-4 text-accent mt-0.5 shrink-0" />
                 <div className="text-sm text-foreground">
                   <p className="font-medium mb-1">Travel fee note</p>
                   <p className="text-muted-foreground">
                     A travel fee may apply for locations outside the greater
                     Hobart area. I'll include this in your personalised quote.
                     Prices may vary by date and location —{" "}
-                    <Link to="/booking" className="text-primary hover:underline">
+                    <Link to="/booking" className="text-accent hover:underline">
                       request a quote
                     </Link>
                     .

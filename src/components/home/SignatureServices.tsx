@@ -55,14 +55,14 @@ const SignatureServices = () => {
                 to={s.link}
                 className="group block bg-card border border-border rounded-lg p-8 hover-lift hover-glow"
               >
-                <s.icon className="w-8 h-8 text-primary mb-5" />
+                <s.icon className="w-8 h-8 text-accent mb-5" />
                 <h3 className="text-xl font-serif font-semibold text-foreground mb-3">
                   {s.title}
                 </h3>
                 <p className="text-sm text-muted-foreground leading-relaxed mb-4">
                   {s.description}
                 </p>
-                <span className="inline-flex items-center gap-1.5 text-sm font-medium text-primary group-hover:gap-3 transition-all duration-300">
+                <span className="inline-flex items-center gap-1.5 text-sm font-medium text-accent group-hover:gap-3 transition-all duration-300">
                   Learn More <ArrowRight className="w-4 h-4" />
                 </span>
               </Link>
