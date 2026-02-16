@@ -36,7 +36,7 @@
     --input: 27 14% 85%;
     --ring: 15 60% 50%;
 
-    --radius: 0.375rem;
+    --radius: 0.25rem;
 
     --rose-light: 350 40% 95%;
     --gold: 35 55% 50%;
@@ -97,6 +97,7 @@
     --sidebar-ring: 217.2 91.2% 59.8%;
     --font-serif: "Playfair Display", ui-serif, Georgia, Cambria, Times New Roman, Times, serif;
     --font-sans: Montserrat, ui-sans-serif, system-ui, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+    --radius: 0.25rem;
   }
 }
 

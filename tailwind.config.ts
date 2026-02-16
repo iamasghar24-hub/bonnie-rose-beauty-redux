@@ -20,7 +20,7 @@ export default {
   	extend: {
   		fontFamily: {
   			serif: [
-  				'Playfair Display',
+  				'Cormorant Garamond',
   				'ui-serif',
   				'Georgia',
   				'Cambria',
@@ -29,7 +29,7 @@ export default {
   				'serif'
   			],
   			sans: [
-  				'Montserrat',
+  				'DM Sans',
   				'ui-sans-serif',
   				'system-ui',
   				'sans-serif',
