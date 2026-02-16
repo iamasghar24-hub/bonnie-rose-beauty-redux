@@ -27,13 +27,17 @@ const About = () => {
         <section className="section-padding">
           <div className="container-narrow mx-auto">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+              {/* Video instead of image */}
               <ScrollReveal>
-                <div className="aspect-[4/5] rounded-lg overflow-hidden">
-                  <img
-                    src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=700&h=875&fit=crop&q=80"
-                    alt="Bonnie Rose - Makeup Artist Hobart"
+                <div className="aspect-[4/5] rounded-lg overflow-hidden bg-muted">
+                  <video
+                    controls
                     className="w-full h-full object-cover"
-                  />
+                    poster="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=700&h=875&fit=crop&q=80"
+                  >
+                    <source src="" type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>
                 </div>
               </ScrollReveal>
 
@@ -95,8 +99,8 @@ const About = () => {
               {values.map((v, i) => (
                 <ScrollReveal key={i} delay={i * 80}>
                   <div className="text-center">
-                    <div className="w-14 h-14 rounded-full bg-rose-light flex items-center justify-center mx-auto mb-4">
-                      <v.icon className="w-6 h-6 text-primary" />
+                    <div className="w-14 h-14 rounded-full bg-card flex items-center justify-center mx-auto mb-4">
+                      <v.icon className="w-6 h-6 text-accent" />
                     </div>
                     <h3 className="font-serif text-lg font-semibold text-foreground mb-2">
                       {v.title}

@@ -31,7 +31,7 @@ const Bridal = () => {
               alt="Bride getting ready on wedding day"
               className="w-full h-full object-cover"
             />
-            <div className="absolute inset-0 bg-foreground/60" />
+            <div className="absolute inset-0 bg-primary/60" />
           </div>
           <div className="relative z-10 container-narrow mx-auto px-5 md:px-8 py-20">
             <div className="max-w-xl">
@@ -68,8 +68,8 @@ const Bridal = () => {
               {benefits.map((b, i) => (
                 <ScrollReveal key={i} delay={i * 80}>
                   <div className="text-center">
-                    <div className="w-14 h-14 rounded-full bg-rose-light flex items-center justify-center mx-auto mb-4">
-                      <b.icon className="w-6 h-6 text-primary" />
+                    <div className="w-14 h-14 rounded-full bg-secondary flex items-center justify-center mx-auto mb-4">
+                      <b.icon className="w-6 h-6 text-accent" />
                     </div>
                     <h3 className="font-serif text-lg font-semibold text-foreground mb-2">{b.title}</h3>
                     <p className="text-sm text-muted-foreground leading-relaxed">{b.text}</p>
@@ -84,7 +84,7 @@ const Bridal = () => {
         <section className="section-padding bg-secondary">
           <div className="container-narrow mx-auto max-w-3xl">
             <ScrollReveal>
-              <div className="bg-card rounded-lg p-10 md:p-14">
+              <div className="bg-card border border-border rounded-lg p-10 md:p-14">
                 <h2 className="text-2xl md:text-3xl font-serif font-semibold text-foreground mb-2">
                   Bridal Makeup Package
                 </h2>
@@ -102,7 +102,7 @@ const Bridal = () => {
                     "On-location service across Hobart",
                   ].map((item, i) => (
                     <li key={i} className="flex items-start gap-3">
-                      <Check className="w-4 h-4 text-primary mt-0.5 shrink-0" />
+                      <Check className="w-4 h-4 text-accent mt-0.5 shrink-0" />
                       <span className="text-sm text-foreground">{item}</span>
                     </li>
                   ))}

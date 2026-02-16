@@ -58,7 +58,7 @@ const SocialProof = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {testimonials.map((t, i) => (
             <ScrollReveal key={i} delay={i * 100}>
-              <div className="bg-card rounded-lg p-8 hover-lift hover-glow">
+              <div className="bg-card border border-border rounded-lg p-8 hover-lift hover-glow">
                 <div className="flex gap-1 mb-4">
                   {[...Array(5)].map((_, j) => (
                     <Star

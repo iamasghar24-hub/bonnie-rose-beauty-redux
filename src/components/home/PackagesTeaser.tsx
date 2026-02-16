@@ -62,7 +62,7 @@ const PackagesTeaser = () => {
               Prices may vary by date and location.{" "}
               <Link
                 to="/booking"
-                className="text-primary hover:underline"
+                className="text-accent hover:underline"
               >
                 Request a quote
               </Link>{" "}
@@ -77,7 +77,7 @@ const PackagesTeaser = () => {
               <div
                 className={`rounded-lg p-8 h-full flex flex-col hover-lift ${
                   pkg.featured
-                    ? "bg-foreground text-primary-foreground ring-2 ring-primary"
+                    ? "bg-primary text-primary-foreground ring-2 ring-accent"
                     : "bg-card border border-border"
                 }`}
               >
@@ -120,7 +120,7 @@ const PackagesTeaser = () => {
                     <li key={j} className="flex items-start gap-2.5">
                       <Check
                         className={`w-4 h-4 mt-0.5 shrink-0 ${
-                          pkg.featured ? "text-primary-foreground/70" : "text-primary"
+                          pkg.featured ? "text-primary-foreground/70" : "text-accent"
                         }`}
                       />
                       <span

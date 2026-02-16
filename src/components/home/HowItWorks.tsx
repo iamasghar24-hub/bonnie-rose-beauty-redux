@@ -27,11 +27,11 @@ const HowItWorks = () => {
               <ScrollReveal key={i} delay={i * 80}>
                 <div className={cn("flex flex-col md:flex-row items-start gap-6 md:gap-12", i % 2 === 1 ? "md:flex-row-reverse" : "")}>
                   <div className={cn("flex-1", i % 2 === 1 ? "md:text-left" : "md:text-right")}>
-                    <span className="text-3xl font-serif font-semibold text-primary/30">{step.number}</span>
+                    <span className="text-3xl font-serif font-semibold text-accent/30">{step.number}</span>
                     <h3 className="text-xl font-serif font-semibold text-foreground mt-1 mb-2">{step.title}</h3>
                     <p className="text-sm text-muted-foreground leading-relaxed max-w-sm">{step.description}</p>
                   </div>
-                  <div className="hidden md:flex items-center justify-center w-4 h-4 rounded-full bg-primary shrink-0 relative z-10 mt-2" />
+                  <div className="hidden md:flex items-center justify-center w-4 h-4 rounded-full bg-accent shrink-0 relative z-10 mt-2" />
                   <div className="flex-1" />
                 </div>
               </ScrollReveal>

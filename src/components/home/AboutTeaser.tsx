@@ -4,25 +4,28 @@ import { Button } from "@/components/ui/button";
 import ScrollReveal from "@/components/ScrollReveal";
 
 const credentials = [
-{ icon: Clock, label: "8+ years of experience" },
-{ icon: Sparkles, label: "Premium products only" },
-{ icon: ShieldCheck, label: "Strict hygiene standards" },
-{ icon: Heart, label: "Calm, professional service" }];
-
+  { icon: Clock, label: "8+ years of experience" },
+  { icon: Sparkles, label: "Premium products only" },
+  { icon: ShieldCheck, label: "Strict hygiene standards" },
+  { icon: Heart, label: "Calm, professional service" },
+];
 
 const AboutTeaser = () => {
   return (
     <section className="section-padding">
       <div className="container-narrow mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-          {/* Image */}
+          {/* Video */}
           <ScrollReveal>
-            <div className="aspect-[4/5] rounded-lg overflow-hidden">
-              <img
-
-                alt="Bonnie Rose - Professional Makeup Artist"
-                className="w-full h-full object-cover" src="/lovable-uploads/3d595410-0439-466b-a2f1-cebba8f56e38.jpg" />
-
+            <div className="aspect-[4/5] rounded-lg overflow-hidden bg-muted">
+              <video
+                controls
+                className="w-full h-full object-cover"
+                poster="https://images.unsplash.com/photo-1560066984-138dadb4c035?w=700&h=875&fit=crop&q=80"
+              >
+                <source src="" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
             </div>
           </ScrollReveal>
 
@@ -49,14 +52,14 @@ const AboutTeaser = () => {
               </p>
 
               <div className="grid grid-cols-2 gap-4 mb-8">
-                {credentials.map(({ icon: Icon, label }, i) =>
-                <div key={i} className="flex items-center gap-3">
-                    <div className="w-10 h-10 rounded-full bg-rose-light flex items-center justify-center shrink-0">
-                      <Icon className="w-4 h-4 text-primary" />
+                {credentials.map(({ icon: Icon, label }, i) => (
+                  <div key={i} className="flex items-center gap-3">
+                    <div className="w-10 h-10 rounded-full bg-secondary flex items-center justify-center shrink-0">
+                      <Icon className="w-4 h-4 text-accent" />
                     </div>
                     <span className="text-sm text-foreground">{label}</span>
                   </div>
-                )}
+                ))}
               </div>
 
               <Button variant="hero-outline" size="lg" asChild>
@@ -68,8 +71,8 @@ const AboutTeaser = () => {
           </ScrollReveal>
         </div>
       </div>
-    </section>);
-
+    </section>
+  );
 };
 
 export default AboutTeaser;
