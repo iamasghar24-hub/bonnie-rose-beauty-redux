@@ -1,25 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
   :root {
-    --background: 36 33% 97%;
-    --foreground: 25 30% 10%;
+    --background: 34 33% 96%;
+    --foreground: 23 11% 15%;
 
-    --card: 36 30% 99%;
-    --card-foreground: 25 30% 10%;
+    --card: 30 27% 94%;
+    --card-foreground: 23 11% 15%;
 
-    --popover: 36 30% 99%;
-    --popover-foreground: 25 30% 10%;
+    --popover: 34 33% 96%;
+    --popover-foreground: 23 11% 15%;
 
-    --primary: 350 30% 48%;
-    --primary-foreground: 0 0% 100%;
+    --primary: 23 11% 15%;
+    --primary-foreground: 34 33% 96%;
 
-    --secondary: 32 22% 92%;
-    --secondary-foreground: 25 30% 15%;
+    --secondary: 33 22% 90%;
+    --secondary-foreground: 23 11% 15%;
 
-    --muted: 32 15% 93%;
+    --muted: 34 14% 90%;
     --muted-foreground: 25 12% 45%;
 
     --accent: 35 55% 50%;
