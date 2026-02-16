@@ -28,22 +28,22 @@ const Footer = () => {
             </h4>
             <ul className="space-y-3">
               {[
-                { label: "Bridal Makeup", to: "/bridal" },
-                { label: "Services & Pricing", to: "/services" },
-                { label: "Portfolio", to: "/portfolio" },
-                { label: "About", to: "/about" },
-                { label: "Reviews", to: "/reviews" },
-                { label: "FAQ", to: "/faq" },
-              ].map((link) => (
-                <li key={link.to}>
+              { label: "Bridal Makeup", to: "/bridal" },
+              { label: "Services & Pricing", to: "/services" },
+              { label: "Portfolio", to: "/portfolio" },
+              { label: "About", to: "/about" },
+              { label: "Reviews", to: "/reviews" },
+              { label: "FAQ", to: "/faq" }].
+              map((link) =>
+              <li key={link.to}>
                   <Link
-                    to={link.to}
-                    className="text-sm opacity-70 hover:opacity-100 transition-opacity duration-200"
-                  >
+                  to={link.to}
+                  className="text-sm opacity-70 hover:opacity-100 transition-opacity duration-200">
+
                     {link.label}
                   </Link>
                 </li>
-              ))}
+              )}
             </ul>
           </div>
 
@@ -54,20 +54,20 @@ const Footer = () => {
             </h4>
             <ul className="space-y-3">
               {[
-                { label: "Deposit & Payment", to: "/policies" },
-                { label: "Cancellation Policy", to: "/policies" },
-                { label: "Travel Fees", to: "/policies" },
-                { label: "Timing & Schedule", to: "/policies" },
-              ].map((link, i) => (
-                <li key={i}>
+              { label: "Deposit & Payment", to: "/policies" },
+              { label: "Cancellation Policy", to: "/policies" },
+              { label: "Travel Fees", to: "/policies" },
+              { label: "Timing & Schedule", to: "/policies" }].
+              map((link, i) =>
+              <li key={i}>
                   <Link
-                    to={link.to}
-                    className="text-sm opacity-70 hover:opacity-100 transition-opacity duration-200"
-                  >
+                  to={link.to}
+                  className="text-sm opacity-70 hover:opacity-100 transition-opacity duration-200">
+
                     {link.label}
                   </Link>
                 </li>
-              ))}
+              )}
             </ul>
           </div>
 
@@ -87,9 +87,9 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  href="tel:+61400000000"
-                  className="flex items-center gap-3 text-sm opacity-70 hover:opacity-100 transition-opacity"
-                >
+
+                  className="flex items-center gap-3 text-sm opacity-70 hover:opacity-100 transition-opacity" href="tel:+61434551802">
+
                   <Phone className="w-4 h-4 shrink-0" />
                   0400 000 000
                 </a>
@@ -97,8 +97,8 @@ const Footer = () => {
               <li>
                 <a
                   href="mailto:hello@bonnierosebeauty.com"
-                  className="flex items-center gap-3 text-sm opacity-70 hover:opacity-100 transition-opacity"
-                >
+                  className="flex items-center gap-3 text-sm opacity-70 hover:opacity-100 transition-opacity">
+
                   <Mail className="w-4 h-4 shrink-0" />
                   hello@bonnierosebeauty.com
                 </a>
@@ -108,8 +108,8 @@ const Footer = () => {
                   href="https://instagram.com/bonnierosebeauty"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-3 text-sm opacity-70 hover:opacity-100 transition-opacity"
-                >
+                  className="flex items-center gap-3 text-sm opacity-70 hover:opacity-100 transition-opacity">
+
                   <Instagram className="w-4 h-4 shrink-0" />
                   @bonnierosebeauty
                 </a>
@@ -129,15 +129,15 @@ const Footer = () => {
               href="https://instagram.com/bonnierosebeauty"
               target="_blank"
               rel="noopener noreferrer"
-              className="opacity-50 hover:opacity-100 transition-opacity"
-            >
+              className="opacity-50 hover:opacity-100 transition-opacity">
+
               <Instagram className="w-5 h-5" />
             </a>
           </div>
         </div>
       </div>
-    </footer>
-  );
+    </footer>);
+
 };
 
 export default Footer;
