@@ -87,8 +87,8 @@ const Footer = () => {
               </li>
               <li>
                 <a
-
-                  className="flex items-center gap-3 text-sm opacity-70 hover:opacity-100 transition-opacity" href="tel:+61434551802">
+                  href="tel:+61400000000"
+                  className="flex items-center gap-3 text-sm opacity-70 hover:opacity-100 transition-opacity">
 
                   <Phone className="w-4 h-4 shrink-0" />
                   0400 000 000
@@ -96,8 +96,8 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  href="mailto:hello@bonnierosebeauty.com"
-                  className="flex items-center gap-3 text-sm opacity-70 hover:opacity-100 transition-opacity">
+
+                  className="flex items-center gap-3 text-sm opacity-70 hover:opacity-100 transition-opacity" href="mailto:contact@bonnierosebeauty.com">
 
                   <Mail className="w-4 h-4 shrink-0" />
                   hello@bonnierosebeauty.com
