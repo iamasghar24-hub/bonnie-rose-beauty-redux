@@ -5,17 +5,17 @@ const testimonials = [
   {
     name: "Sarah M.",
     text: "Bonnie made me feel so calm and beautiful on my wedding day. My makeup lasted from sunrise photos to the last dance!",
-    role: "Bride, 2024",
+    role: "Bride",
   },
   {
     name: "Emily R.",
     text: "Absolutely stunning work. Every photo from my wedding looks flawless — I couldn't have asked for anything more.",
-    role: "Bride, 2024",
+    role: "Bride",
   },
   {
     name: "Jessica T.",
     text: "Professional, punctual, and incredibly talented. Bonnie is the best makeup artist in Hobart, hands down.",
-    role: "Bride, 2023",
+    role: "Bride",
   },
 ];
 
