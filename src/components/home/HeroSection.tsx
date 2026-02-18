@@ -63,9 +63,9 @@ const HeroSection = () => {
             style={{ animationDelay: "200ms" }}>
 
             <img
-
+              src="https://images.unsplash.com/photo-1560066984-138dadb4c035?w=800&h=1000&fit=crop&q=80"
               alt="Professional bridal makeup application"
-              className="w-full h-full object-cover" src="/lovable-uploads/07fa2b9f-6e9e-42a1-8851-6c9ab62f1b4c.jpg" />
+              className="w-full h-full object-cover rounded-3xl" />
 
           </div>
         </div>
