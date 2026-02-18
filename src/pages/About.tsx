@@ -29,13 +29,13 @@ const About = () => {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
               {/* Video instead of image */}
               <ScrollReveal>
-                <div className="aspect-[4/5] rounded-lg overflow-hidden bg-muted">
-                  <iframe
-                    src="https://www.instagram.com/reel/DUx7Hg7E-43/embed"
-                    title="About Bonnie Rose Beauty"
-                    className="w-full h-full"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
+              <div className="aspect-[4/5] rounded-lg overflow-hidden bg-muted">
+                  <video
+                    src="/lovable-uploads/about-video.mp4"
+                    controls
+                    playsInline
+                    className="w-full h-full object-cover"
+                    poster="/lovable-uploads/portfolio-1.jpg"
                   />
                 </div>
               </ScrollReveal>

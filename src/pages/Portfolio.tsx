@@ -19,15 +19,15 @@ const photoImages = [
 ];
 
 const videoItems = [
-  { title: "Bridal Transformation", embedUrl: "https://www.instagram.com/reel/DUz7FJpk2P2/embed" },
-  { title: "Client Look", embedUrl: "https://www.instagram.com/reel/DUxKxWsE8u_/embed" },
-  { title: "Wedding Day Glam", embedUrl: "https://www.instagram.com/reel/DUwopfVE1x1/embed" },
-  { title: "Bridal Beauty", embedUrl: "https://www.instagram.com/reel/DUprZ6HE8Rl/embed" },
-  { title: "Soft Glam Look", embedUrl: "https://www.instagram.com/reel/DUl98xqExFn/embed" },
-  { title: "Full Glam Finish", embedUrl: "https://www.instagram.com/reel/DUhVxXGE4lU/embed" },
-  { title: "Before & After", embedUrl: "https://www.instagram.com/reel/DQ6SRjeE861/embed" },
-  { title: "Beauty Reel", embedUrl: "https://www.instagram.com/reel/DKi0SwoRSBs/embed" },
-  { title: "Client Testimonial", embedUrl: "https://www.instagram.com/reel/DH0YrvfRujm/embed" },
+  { title: "Bridal Transformation", src: "/lovable-uploads/video-1.mp4" },
+  { title: "Client Look", src: "/lovable-uploads/video-2.mp4" },
+  { title: "Wedding Day Glam", src: "/lovable-uploads/video-3.mp4" },
+  { title: "Bridal Beauty", src: "/lovable-uploads/video-4.mp4" },
+  { title: "Soft Glam Look", src: "/lovable-uploads/video-5.mp4" },
+  { title: "Full Glam Finish", src: "/lovable-uploads/video-6.mp4" },
+  { title: "Before & After", src: "/lovable-uploads/video-7.mp4" },
+  { title: "Beauty Reel", src: "/lovable-uploads/video-8.mp4" },
+  { title: "Client Testimonial", src: "/lovable-uploads/video-9.mp4" },
 ];
 
 const Portfolio = () => {
@@ -97,12 +97,12 @@ const Portfolio = () => {
                 <ScrollReveal key={i} delay={i * 80}>
                   <div className="bg-card border border-border rounded-lg overflow-hidden hover-lift">
                     <div className="aspect-[9/16] max-h-[500px]">
-                      <iframe
-                        src={video.embedUrl}
-                        title={video.title}
-                        className="w-full h-full"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowFullScreen
+                      <video
+                        src={video.src}
+                        controls
+                        playsInline
+                        className="w-full h-full object-cover"
+                        poster="/lovable-uploads/portfolio-1.jpg"
                       />
                     </div>
                     <div className="p-4">
