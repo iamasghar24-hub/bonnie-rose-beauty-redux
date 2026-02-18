@@ -12,24 +12,24 @@ const HeroSection = () => {
             {/* Badges */}
             <div className="flex flex-wrap gap-3 mb-8 animate-fade-up">
               {[
-                { icon: MapPin, label: "Hobart Based" },
-                { icon: Sparkles, label: "On Location" },
-                { icon: Heart, label: "Bridal Specialist" },
-              ].map(({ icon: Icon, label }) => (
-                <span
-                  key={label}
-                  className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-secondary rounded-full text-xs tracking-wide text-foreground border border-border"
-                >
+              { icon: MapPin, label: "Hobart Based" },
+              { icon: Sparkles, label: "On Location" },
+              { icon: Heart, label: "Bridal Specialist" }].
+              map(({ icon: Icon, label }) =>
+              <span
+                key={label}
+                className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-secondary rounded-full text-xs tracking-wide text-foreground border border-border">
+
                   <Icon className="w-3 h-3" />
                   {label}
                 </span>
-              ))}
+              )}
             </div>
 
             <h1
               className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-serif font-semibold text-foreground leading-[1.1] mb-6 animate-fade-up"
-              style={{ animationDelay: "100ms" }}
-            >
+              style={{ animationDelay: "100ms" }}>
+
               Makeup That Lasts
               <br />
               <span className="italic font-normal">As Long As Your Day</span>
@@ -37,8 +37,8 @@ const HeroSection = () => {
 
             <p
               className="text-base md:text-lg text-muted-foreground max-w-lg mb-10 leading-relaxed font-sans animate-fade-up"
-              style={{ animationDelay: "200ms" }}
-            >
+              style={{ animationDelay: "200ms" }}>
+
               Professional bridal & event makeup in Hobart, Tasmania.
               Photography-ready, long-wearing looks crafted for your most
               beautiful moments.
@@ -46,8 +46,8 @@ const HeroSection = () => {
 
             <div
               className="flex flex-col sm:flex-row gap-4 animate-fade-up"
-              style={{ animationDelay: "300ms" }}
-            >
+              style={{ animationDelay: "300ms" }}>
+
               <Button variant="hero" size="xl" asChild>
                 <Link to="/booking">Book Now</Link>
               </Button>
@@ -60,18 +60,18 @@ const HeroSection = () => {
           {/* Right - Editable Image */}
           <div
             className="aspect-[4/5] rounded-lg overflow-hidden animate-fade-up order-first lg:order-last"
-            style={{ animationDelay: "200ms" }}
-          >
+            style={{ animationDelay: "200ms" }}>
+
             <img
-              src="https://images.unsplash.com/photo-1560066984-138dadb4c035?w=800&h=1000&fit=crop&q=80"
+
               alt="Professional bridal makeup application"
-              className="w-full h-full object-cover"
-            />
+              className="w-full h-full object-cover" src="/lovable-uploads/07fa2b9f-6e9e-42a1-8851-6c9ab62f1b4c.jpg" />
+
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>);
+
 };
 
 export default HeroSection;
