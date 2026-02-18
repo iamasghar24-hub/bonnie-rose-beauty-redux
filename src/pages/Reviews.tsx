@@ -7,14 +7,14 @@ import { Button } from "@/components/ui/button";
 import { Star } from "lucide-react";
 
 const reviews = [
-  { name: "Sarah M.", role: "Bride, 2024", text: "Bonnie made me feel so calm and beautiful on my wedding day. My makeup lasted from sunrise photos all the way through to the last dance. Couldn't have asked for a better experience!" },
-  { name: "Emily R.", role: "Bride, 2024", text: "Absolutely stunning work. Every single photo from my wedding looks flawless. Bonnie really listened to what I wanted and delivered even more than I imagined." },
-  { name: "Jessica T.", role: "Bride, 2023", text: "Professional, punctual, and incredibly talented. Bonnie is hands down the best makeup artist in Hobart. My bridesmaids all looked amazing too!" },
-  { name: "Amanda L.", role: "Bride, 2023", text: "I was so nervous about choosing a makeup artist, but from the moment I met Bonnie at my trial I knew I was in safe hands. She's a true perfectionist." },
-  { name: "Kate W.", role: "Event Client, 2024", text: "Bonnie did my makeup for a gala event and I received so many compliments. She has a real gift for making you look like the best version of yourself." },
-  { name: "Rachel D.", role: "Bride, 2024", text: "From the trial to the wedding day, Bonnie was an absolute dream. She even helped calm my nerves on the morning! My makeup lasted over 14 hours." },
-  { name: "Megan H.", role: "Bride, 2023", text: "Worth every cent. Bonnie travels to your venue, arrives early, and creates the most beautiful looks. I cried multiple times and my makeup stayed perfect!" },
-  { name: "Lauren S.", role: "Bridesmaid, 2024", text: "Bonnie did makeup for the entire bridal party and we all looked incredible. She managed the timing perfectly and kept the morning relaxed and fun." },
+  { name: "Sarah M.", role: "Bride", text: "Bonnie made me feel so calm and beautiful on my wedding day. My makeup lasted from sunrise photos all the way through to the last dance. Couldn't have asked for a better experience!" },
+  { name: "Emily R.", role: "Bride", text: "Absolutely stunning work. Every single photo from my wedding looks flawless. Bonnie really listened to what I wanted and delivered even more than I imagined." },
+  { name: "Jessica T.", role: "Bride", text: "Professional, punctual, and incredibly talented. Bonnie is hands down the best makeup artist in Hobart. My bridesmaids all looked amazing too!" },
+  { name: "Amanda L.", role: "Bride", text: "I was so nervous about choosing a makeup artist, but from the moment I met Bonnie at my trial I knew I was in safe hands. She's a true perfectionist." },
+  { name: "Kate W.", role: "Event Client", text: "Bonnie did my makeup for a gala event and I received so many compliments. She has a real gift for making you look like the best version of yourself." },
+  { name: "Rachel D.", role: "Bride", text: "From the trial to the wedding day, Bonnie was an absolute dream. She even helped calm my nerves on the morning! My makeup lasted over 14 hours." },
+  { name: "Megan H.", role: "Bride", text: "Worth every cent. Bonnie travels to your venue, arrives early, and creates the most beautiful looks. I cried multiple times and my makeup stayed perfect!" },
+  { name: "Lauren S.", role: "Bridesmaid", text: "Bonnie did makeup for the entire bridal party and we all looked incredible. She managed the timing perfectly and kept the morning relaxed and fun." },
 ];
 
 const Reviews = () => {

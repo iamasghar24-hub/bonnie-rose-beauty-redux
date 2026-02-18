@@ -18,14 +18,13 @@ const AboutTeaser = () => {
           {/* Video */}
           <ScrollReveal>
             <div className="aspect-[4/5] rounded-lg overflow-hidden bg-muted">
-              <video
-                controls
-                className="w-full h-full object-cover"
-                poster="https://images.unsplash.com/photo-1560066984-138dadb4c035?w=700&h=875&fit=crop&q=80"
-              >
-                <source src="" type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
+              <iframe
+                src="https://www.instagram.com/reel/DUx7Hg7E-43/embed"
+                title="About Bonnie Rose Beauty"
+                className="w-full h-full"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              />
             </div>
           </ScrollReveal>
 

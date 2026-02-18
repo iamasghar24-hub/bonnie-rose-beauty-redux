@@ -4,14 +4,14 @@ import { Button } from "@/components/ui/button";
 import ScrollReveal from "@/components/ScrollReveal";
 
 const portfolioImages = [
-  { src: "https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?w=600&h=750&fit=crop&q=80", alt: "Bridal soft glam look" },
-  { src: "https://images.unsplash.com/photo-1519741497674-611481863552?w=600&h=750&fit=crop&q=80", alt: "Bride on wedding day" },
-  { src: "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=600&h=750&fit=crop&q=80", alt: "Full glam editorial look" },
-  { src: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=600&h=750&fit=crop&q=80", alt: "Natural soft glam" },
-  { src: "https://images.unsplash.com/photo-1512496015851-a90fb38ba796?w=600&h=750&fit=crop&q=80", alt: "Bridal beauty portrait" },
-  { src: "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=600&h=750&fit=crop&q=80", alt: "Elegant soft glam" },
-  { src: "https://images.unsplash.com/photo-1522413452208-996ff3f3e740?w=600&h=750&fit=crop&q=80", alt: "Full glam beauty" },
-  { src: "https://images.unsplash.com/photo-1596704017254-9b121068fb31?w=600&h=750&fit=crop&q=80", alt: "Professional makeup result" },
+  { src: "/lovable-uploads/portfolio-1.jpg", alt: "Beauty portrait" },
+  { src: "/lovable-uploads/portfolio-4.jpg", alt: "Glam makeup look" },
+  { src: "/lovable-uploads/portfolio-5.jpg", alt: "Bridal soft waves" },
+  { src: "/lovable-uploads/portfolio-6.jpg", alt: "Smokey glam look" },
+  { src: "/lovable-uploads/portfolio-7.jpg", alt: "Natural bridal look" },
+  { src: "/lovable-uploads/portfolio-8.jpg", alt: "Warm tones beauty" },
+  { src: "/lovable-uploads/portfolio-9.jpg", alt: "Full glam bridal" },
+  { src: "/lovable-uploads/portfolio-10.jpg", alt: "Classic bridal beauty" },
 ];
 
 const PortfolioPreview = () => {

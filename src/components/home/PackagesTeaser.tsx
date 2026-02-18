@@ -16,7 +16,7 @@ const packages = [
       "Touch-up kit",
     ],
     ideal: "For the bride",
-    featured: true,
+    featured: false,
   },
   {
     name: "Bridal Party",
@@ -74,69 +74,33 @@ const PackagesTeaser = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {packages.map((pkg, i) => (
             <ScrollReveal key={i} delay={i * 100}>
-              <div
-                className={`rounded-lg p-8 h-full flex flex-col hover-lift ${
-                  pkg.featured
-                    ? "bg-primary text-primary-foreground ring-2 ring-accent"
-                    : "bg-card border border-border"
-                }`}
-              >
-                <p
-                  className={`text-xs tracking-wide uppercase mb-1 ${
-                    pkg.featured
-                      ? "text-primary-foreground/60"
-                      : "text-muted-foreground"
-                  }`}
-                >
+              <div className="rounded-lg p-8 h-full flex flex-col hover-lift bg-card border border-border">
+                <p className="text-xs tracking-wide uppercase mb-1 text-muted-foreground">
                   {pkg.ideal}
                 </p>
-                <h3
-                  className={`text-xl font-serif font-semibold mb-4 ${
-                    pkg.featured ? "text-primary-foreground" : "text-foreground"
-                  }`}
-                >
+                <h3 className="text-xl font-serif font-semibold mb-4 text-foreground">
                   {pkg.name}
                 </h3>
                 <div className="mb-6">
-                  <span
-                    className={`text-3xl font-serif font-semibold ${
-                      pkg.featured ? "text-primary-foreground" : "text-foreground"
-                    }`}
-                  >
+                  <span className="text-3xl font-serif font-semibold text-foreground">
                     {pkg.price}
                   </span>
-                  <span
-                    className={`text-xs ml-2 ${
-                      pkg.featured
-                        ? "text-primary-foreground/60"
-                        : "text-muted-foreground"
-                    }`}
-                  >
+                  <span className="text-xs ml-2 text-muted-foreground">
                     {pkg.note}
                   </span>
                 </div>
                 <ul className="space-y-3 mb-8 flex-1">
                   {pkg.includes.map((item, j) => (
                     <li key={j} className="flex items-start gap-2.5">
-                      <Check
-                        className={`w-4 h-4 mt-0.5 shrink-0 ${
-                          pkg.featured ? "text-primary-foreground/70" : "text-accent"
-                        }`}
-                      />
-                      <span
-                        className={`text-sm ${
-                          pkg.featured
-                            ? "text-primary-foreground/80"
-                            : "text-muted-foreground"
-                        }`}
-                      >
+                      <Check className="w-4 h-4 mt-0.5 shrink-0 text-accent" />
+                      <span className="text-sm text-muted-foreground">
                         {item}
                       </span>
                     </li>
                   ))}
                 </ul>
                 <Button
-                  variant={pkg.featured ? "gold" : "hero-outline"}
+                  variant="hero-outline"
                   size="lg"
                   asChild
                   className="w-full"

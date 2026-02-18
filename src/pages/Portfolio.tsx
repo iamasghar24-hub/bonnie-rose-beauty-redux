@@ -6,25 +6,28 @@ import ScrollReveal from "@/components/ScrollReveal";
 import { Button } from "@/components/ui/button";
 
 const photoImages = [
-  { src: "https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?w=600&h=750&fit=crop&q=80", alt: "Bridal soft glam look" },
-  { src: "https://images.unsplash.com/photo-1519741497674-611481863552?w=600&h=750&fit=crop&q=80", alt: "Bride portrait" },
-  { src: "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=600&h=750&fit=crop&q=80", alt: "Full glam editorial" },
-  { src: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=600&h=750&fit=crop&q=80", alt: "Natural beauty look" },
-  { src: "https://images.unsplash.com/photo-1512496015851-a90fb38ba796?w=600&h=750&fit=crop&q=80", alt: "Bridal beauty close-up" },
-  { src: "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=600&h=750&fit=crop&q=80", alt: "Elegant portrait" },
-  { src: "https://images.unsplash.com/photo-1522413452208-996ff3f3e740?w=600&h=750&fit=crop&q=80", alt: "Full glam beauty" },
-  { src: "https://images.unsplash.com/photo-1596704017254-9b121068fb31?w=600&h=750&fit=crop&q=80", alt: "Makeup application" },
-  { src: "https://images.unsplash.com/photo-1583001931096-959e9a1a6223?w=600&h=750&fit=crop&q=80", alt: "Beauty portrait" },
-  { src: "https://images.unsplash.com/photo-1457972729786-0411a3b2b626?w=600&h=750&fit=crop&q=80", alt: "Bridal glow" },
-  { src: "https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?w=600&h=750&fit=crop&q=80", alt: "Soft glam finish" },
-  { src: "https://images.unsplash.com/photo-1560066984-138dadb4c035?w=600&h=750&fit=crop&q=80", alt: "Professional result" },
+  { src: "/lovable-uploads/portfolio-1.jpg", alt: "Beauty portrait" },
+  { src: "/lovable-uploads/portfolio-4.jpg", alt: "Glam makeup look" },
+  { src: "/lovable-uploads/portfolio-5.jpg", alt: "Bridal soft waves" },
+  { src: "/lovable-uploads/portfolio-6.jpg", alt: "Smokey glam look" },
+  { src: "/lovable-uploads/portfolio-7.jpg", alt: "Natural bridal look" },
+  { src: "/lovable-uploads/portfolio-8.jpg", alt: "Warm tones beauty" },
+  { src: "/lovable-uploads/portfolio-9.jpg", alt: "Full glam bridal" },
+  { src: "/lovable-uploads/portfolio-10.jpg", alt: "Classic bridal beauty" },
+  { src: "/lovable-uploads/portfolio-11.jpg", alt: "Soft glam portrait" },
+  { src: "/lovable-uploads/portfolio-12.jpg", alt: "Bold lip bridal look" },
 ];
 
 const videoItems = [
-  { title: "Bridal Before & After", embedUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ", description: "See the transformation" },
-  { title: "Client Testimonial", embedUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ", description: "Hear from a happy bride" },
-  { title: "Wedding Day Prep", embedUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ", description: "Behind the scenes" },
-  { title: "Makeup Tutorial", embedUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ", description: "Tips and techniques" },
+  { title: "Bridal Transformation", embedUrl: "https://www.instagram.com/reel/DUz7FJpk2P2/embed" },
+  { title: "Client Look", embedUrl: "https://www.instagram.com/reel/DUxKxWsE8u_/embed" },
+  { title: "Wedding Day Glam", embedUrl: "https://www.instagram.com/reel/DUwopfVE1x1/embed" },
+  { title: "Bridal Beauty", embedUrl: "https://www.instagram.com/reel/DUprZ6HE8Rl/embed" },
+  { title: "Soft Glam Look", embedUrl: "https://www.instagram.com/reel/DUl98xqExFn/embed" },
+  { title: "Full Glam Finish", embedUrl: "https://www.instagram.com/reel/DUhVxXGE4lU/embed" },
+  { title: "Before & After", embedUrl: "https://www.instagram.com/reel/DQ6SRjeE861/embed" },
+  { title: "Beauty Reel", embedUrl: "https://www.instagram.com/reel/DKi0SwoRSBs/embed" },
+  { title: "Client Testimonial", embedUrl: "https://www.instagram.com/reel/DH0YrvfRujm/embed" },
 ];
 
 const Portfolio = () => {
@@ -89,11 +92,11 @@ const Portfolio = () => {
               </div>
             </ScrollReveal>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {videoItems.map((video, i) => (
                 <ScrollReveal key={i} delay={i * 80}>
                   <div className="bg-card border border-border rounded-lg overflow-hidden hover-lift">
-                    <div className="aspect-video">
+                    <div className="aspect-[9/16] max-h-[500px]">
                       <iframe
                         src={video.embedUrl}
                         title={video.title}
@@ -102,13 +105,10 @@ const Portfolio = () => {
                         allowFullScreen
                       />
                     </div>
-                    <div className="p-5">
-                      <h3 className="font-serif text-lg font-semibold text-card-foreground mb-1">
+                    <div className="p-4">
+                      <h3 className="font-serif text-base font-semibold text-card-foreground">
                         {video.title}
                       </h3>
-                      <p className="text-sm text-muted-foreground">
-                        {video.description}
-                      </p>
                     </div>
                   </div>
                 </ScrollReveal>
