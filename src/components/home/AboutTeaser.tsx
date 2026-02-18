@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { ArrowRight, Clock, ShieldCheck, Sparkles, Heart } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import ScrollReveal from "@/components/ScrollReveal";
+import AutoplayVideo from "@/components/AutoplayVideo";
 
 const credentials = [
   { icon: Clock, label: "8+ years of experience" },
@@ -18,12 +19,9 @@ const AboutTeaser = () => {
           {/* Video */}
           <ScrollReveal>
             <div className="aspect-[4/5] rounded-lg overflow-hidden bg-muted">
-              <video
+              <AutoplayVideo
                 src="/lovable-uploads/about-video.mp4"
-                controls
-                playsInline
                 className="w-full h-full object-cover"
-                poster="/lovable-uploads/portfolio-1.jpg"
               />
             </div>
           </ScrollReveal>

@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ScrollReveal from "@/components/ScrollReveal";
+import AutoplayVideo from "@/components/AutoplayVideo";
 import { Button } from "@/components/ui/button";
 
 const photoImages = [
@@ -24,10 +25,7 @@ const videoItems = [
 { title: "Wedding Day Glam", src: "/lovable-uploads/video-3.mp4" },
 { title: "Bridal Beauty", src: "/lovable-uploads/video-4.mp4" },
 { title: "Soft Glam Look", src: "/lovable-uploads/video-5.mp4" },
-{ title: "Full Glam Finish", src: "/lovable-uploads/video-6.mp4" },
-{ title: "Before & After", src: "/lovable-uploads/video-7.mp4" },
-{ title: "Beauty Reel", src: "/lovable-uploads/video-8.mp4" },
-{ title: "Client Testimonial", src: "/lovable-uploads/video-9.mp4" }];
+{ title: "Full Glam Finish", src: "/lovable-uploads/video-6.mp4" }];
 
 
 const Portfolio = () => {
@@ -97,13 +95,10 @@ const Portfolio = () => {
               <ScrollReveal key={i} delay={i * 80}>
                   <div className="bg-card border border-border rounded-lg overflow-hidden hover-lift">
                     <div className="aspect-[9/16] max-h-[500px]">
-                      <video
-                      src={video.src}
-                      controls
-                      playsInline
-                      className="w-full h-full object-cover"
-                      poster="/lovable-uploads/portfolio-1.jpg" />
-
+                      <AutoplayVideo
+                        src={video.src}
+                        className="w-full h-full object-cover"
+                      />
                     </div>
                     
 

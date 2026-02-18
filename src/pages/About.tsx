@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ScrollReveal from "@/components/ScrollReveal";
+import AutoplayVideo from "@/components/AutoplayVideo";
 import { Button } from "@/components/ui/button";
 import { Clock, ShieldCheck, Sparkles, Heart, Award, MapPin } from "lucide-react";
 
@@ -30,12 +31,9 @@ const About = () => {
               {/* Video instead of image */}
               <ScrollReveal>
               <div className="aspect-[4/5] rounded-lg overflow-hidden bg-muted">
-                  <video
+                  <AutoplayVideo
                     src="/lovable-uploads/about-video.mp4"
-                    controls
-                    playsInline
                     className="w-full h-full object-cover"
-                    poster="/lovable-uploads/portfolio-1.jpg"
                   />
                 </div>
               </ScrollReveal>
