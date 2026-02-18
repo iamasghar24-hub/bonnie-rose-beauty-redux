@@ -7,6 +7,8 @@ import { Button } from "@/components/ui/button";
 
 const photoImages = [
   { src: "/lovable-uploads/portfolio-1.jpg", alt: "Beauty portrait" },
+  { src: "/lovable-uploads/portfolio-2.jpg", alt: "Smokey glam portrait" },
+  { src: "/lovable-uploads/portfolio-3.jpg", alt: "Glam beauty look" },
   { src: "/lovable-uploads/portfolio-4.jpg", alt: "Glam makeup look" },
   { src: "/lovable-uploads/portfolio-5.jpg", alt: "Bridal soft waves" },
   { src: "/lovable-uploads/portfolio-6.jpg", alt: "Smokey glam look" },
@@ -25,9 +27,6 @@ const videoItems = [
   { title: "Bridal Beauty", src: "/lovable-uploads/video-4.mp4" },
   { title: "Soft Glam Look", src: "/lovable-uploads/video-5.mp4" },
   { title: "Full Glam Finish", src: "/lovable-uploads/video-6.mp4" },
-  { title: "Before & After", src: "/lovable-uploads/video-7.mp4" },
-  { title: "Beauty Reel", src: "/lovable-uploads/video-8.mp4" },
-  { title: "Client Testimonial", src: "/lovable-uploads/video-9.mp4" },
 ];
 
 const Portfolio = () => {
